@@ -26,6 +26,7 @@ adduser $USERNAME www-data
 mkdir /home/$USERNAME/.drush
 ln -s /var/aegir/.drush/$USERNAME.devudo.com.alias.drushrc.php /home/$USERNAME/.drush/
 ln -s /var/aegir/.drush/server_localhost.alias.drushrc.php /home/$USERNAME/.drush/
+ln -s /var/aegir/.drush/server_master.alias.drushrc.php /home/$USERNAME/.drush/
 ln -s /var/aegir/.drush/platform_devmaster6x19.alias.drushrc.php /home/$USERNAME/.drush/
 
 # @TODO: as the user, run hosting setup.
