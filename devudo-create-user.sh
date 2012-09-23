@@ -12,10 +12,11 @@ fi
 
 # create password
 PASSWORD=jkl4gh4jhgjui4o4y
+PASSWORD=changemenow
 PASSWORD_ENCRYPTED=$(perl -e 'print crypt($ARGV[0], "password")' $PASSWORD)
 
 # create user
-useradd -m -p $PASSWORD_ENCRYPTED $USERNAME
+useradd -m -p $PASSWORD_ENCRYPTED $USERNAME --shell=/bin/bash
 echo "User $USERNAME has been created!"
 
 # add user to aegir group
